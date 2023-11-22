@@ -2,7 +2,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "3.6.0"
 
-  name = "my-vpc"
+  name = "my-vpc${var.name}"
   cidr = "10.0.0.0/16"
 
   enable_dns_hostnames = true
