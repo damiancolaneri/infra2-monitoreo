@@ -7,7 +7,7 @@ module "db" {
   engine               = "mysql"
   family               = "mysql5.7"
   major_engine_version = "5.7"
-  engine_version       = "5.7.37"
+  engine_version       = "5.7.44"
 
   name     = "demodb${var.name}"
   username = "user"
